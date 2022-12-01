@@ -1,0 +1,78 @@
+/* IMPORTACIONES */
+//Fuentes
+
+/* VARIABLES */
+// Colores Basicos
+$ui-1-hex: #F2F2F2;
+$ui-2-hex: #BFBFBF;
+$ui-3-hex: #8C8C8C;
+$ui-4-hex: #404040;
+$ui-5-hex: #0D0D0D;
+// Colores Secundarios
+
+
+
+
+
+/* ESTILOS */
+
+*{
+  font-size: 16px;
+  color: #F2F2F2;
+}
+
+body{
+  margin: 0;
+  padding: 0 1rem;
+  background-color: #0D0D0D;
+}
+.header{
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+  display: flex;
+  width: 100%;
+  aside{
+    background-color: #404040;
+    width: 15rem;
+    padding: 1rem;
+  }
+  .sub-container{
+    background-color: transparent;
+    width: 100%;
+    .section-header{
+      width: 100%;
+      background-color: yellowgreen;
+      padding: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .section-nav{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      ul{
+        margin-top: .5rem;
+        width: 100%;
+      }
+      ul li{
+        margin: auto;
+        width: 18%;
+        text-align: center;
+      }
+      ul li a{
+        color: #F2F2F2;
+      }
+      ul li .active{
+        color: #0D0D0D;
+      }
+    }
+  }
+}
+
+

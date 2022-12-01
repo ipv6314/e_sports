@@ -1,0 +1,62 @@
+/* IMPORTACIONES */
+/* VARIABLES */
+/* ESTILOS */
+* {
+  font-size: 16px;
+  color: #F2F2F2;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem;
+  background-color: #0D0D0D;
+}
+
+.header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  width: 100%;
+}
+.main-container aside {
+  background-color: #404040;
+  width: 15rem;
+  padding: 1rem;
+}
+.main-container .sub-container {
+  background-color: transparent;
+  width: 100%;
+}
+.main-container .sub-container .section-header {
+  width: 100%;
+  background-color: yellowgreen;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .sub-container .section-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main-container .sub-container .section-nav ul {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.main-container .sub-container .section-nav ul li {
+  margin: auto;
+  width: 18%;
+  text-align: center;
+}
+.main-container .sub-container .section-nav ul li a {
+  color: #F2F2F2;
+}
+.main-container .sub-container .section-nav ul li .active {
+  color: #0D0D0D;
+}/*# sourceMappingURL=style.css.map */
