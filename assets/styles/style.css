@@ -56,7 +56,11 @@ body {
 }
 .main-container .section-header {
   width: 100%;
-  background-color: yellowgreen;
+  height: 5rem;
+  background-image: url(/assets/imgs/WCQatar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
