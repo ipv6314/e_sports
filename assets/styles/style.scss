@@ -3,76 +3,92 @@
 
 /* VARIABLES */
 // Colores Basicos
-$ui-1-hex: #F2F2F2;
-$ui-2-hex: #BFBFBF;
-$ui-3-hex: #8C8C8C;
+$ui-1-hex: #f2f2f2;
+$ui-2-hex: #bfbfbf;
+$ui-3-hex: #8c8c8c;
 $ui-4-hex: #404040;
-$ui-5-hex: #0D0D0D;
+$ui-5-hex: #0d0d0d;
 // Colores Secundarios
-
-
-
-
 
 /* ESTILOS */
 
-*{
+* {
   font-size: 16px;
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
-body{
+body {
   margin: 0;
   padding: 0 1rem;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
 }
-.header{
+.header {
   height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.main-container{
-  display: flex;
-  width: 100%;
-  aside{
-    background-color: #404040;
-    width: 15rem;
-    padding: 1rem;
-  }
-  .sub-container{
-    background-color: transparent;
+.navegacion{
+  ul{
     width: 100%;
-    .section-header{
-      width: 100%;
-      background-color: yellowgreen;
-      padding: .5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    margin: auto;
+    li {
+      margin: auto;
+      padding: .2rem;
     }
-    .section-nav{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      ul{
-        margin-top: .5rem;
-        width: 100%;
+    .dd-menu{
+      width: 210px;
+    }
+    .dropdown-item-cont{
+      padding: 0;
+    }
+    .dropdown-item-cont a{
+      color: #8c8c8c;
+      &:hover{
+        color: #0d0d0d;
       }
-      ul li{
-        margin: auto;
-        width: 18%;
-        text-align: center;
-      }
-      ul li a{
-        color: #F2F2F2;
-      }
-      ul li .active{
-        color: #0D0D0D;
+    }
+    li a{
+      color: #bfbfbf;
+      font-weight: 700;
+      &:hover{
+        color: tomato;
       }
     }
   }
 }
-
-
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: transparent;
+  width: 100%;
+  .section-header {
+    width: 100%;
+    background-color: yellowgreen;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    ul {
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+    ul li {
+      margin: auto;
+      width: 18%;
+      text-align: center;
+    }
+    ul li a {
+      color: #f2f2f2;
+    }
+    ul li .active {
+      color: #0d0d0d;
+    }
+  }
+}
