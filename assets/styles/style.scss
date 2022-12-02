@@ -71,6 +71,7 @@ body {
     align-items: center;
   }
   .wc-header{
+    background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
     background-image: url(/assets/imgs/WCQatar.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -97,3 +98,35 @@ body {
     }
   }
 }
+  .groups{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 1rem;
+    .group-title{
+      background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
+      text-align: center;
+      padding: .3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      border: 1px solid white;
+    }
+    .group {
+      background-color: chocolate;
+      padding: .5rem;
+    }
+    .group-pos{
+      width: 100%;
+      background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
+      border: 1px solid white;
+      margin: auto;
+      thead > tr{
+      background-color: #0d0d0d;
+    }
+    thead > tr th{
+      text-align: center;
+      border: 1px solid white;
+    }
+    }
+  }
