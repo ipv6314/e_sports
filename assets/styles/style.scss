@@ -97,12 +97,11 @@ body {
       color: #0d0d0d;
     }
   }
-}
   .groups{
     display: grid;
     gap: 1rem;
-    grid-auto-rows: 22rem;
-    grid-template-columns: repeat(2, 2fr);
+    grid-auto-rows: 42rem;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
     padding: 1rem;
     .group-title{
       background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
@@ -110,23 +109,65 @@ body {
       padding: .3rem;
       font-weight: 700;
       letter-spacing: 2px;
-      border: 1px solid white;
     }
     .group {
-      background-color: chocolate;
+      border: 1px solid white;
       padding: .5rem;
     }
     .group-pos{
       width: 100%;
       background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
-      border: 1px solid white;
       margin: auto;
       thead > tr{
       background-color: #0d0d0d;
     }
     thead > tr th{
       text-align: center;
-      border: 1px solid white;
     }
     }
-  }
+    .dates {
+      margin-top: 1rem;
+      .date {
+        margin-top: 1rem;
+        .date-number{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          font-weight: 700;
+          letter-spacing: 2px;
+          padding: .1rem;
+          margin-bottom: .2rem;
+          p {
+            margin: 0;
+          }
+        }
+        .date-match {
+          margin: auto;
+          .team {
+            margin: auto;
+            text-align: center;
+            line-height: 1.5rem;
+            background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
+            font-size: .8rem;
+          }
+          .score{
+            background-color: #f2f2f2;
+            border-right: 1px solid rgba(146,14,53,1);
+            border-left: 1px solid rgba(146,14,53,1);
+          }
+          .date-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            padding: .2rem;
+            font-size: .8rem;
+            margin:  .2rem auto;
+          }
+        }
+      }
+    }
+}
+}
+

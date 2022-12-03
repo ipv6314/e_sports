@@ -88,36 +88,75 @@ body {
 .main-container .section-nav ul li .active {
   color: #0d0d0d;
 }
-
-.groups {
+.main-container .groups {
   display: grid;
   gap: 1rem;
-  grid-auto-rows: 22rem;
-  grid-template-columns: repeat(2, 2fr);
+  grid-auto-rows: 42rem;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   padding: 1rem;
 }
-.groups .group-title {
+.main-container .groups .group-title {
   background: linear-gradient(90deg, rgb(38, 1, 15) 0%, rgb(146, 14, 53) 51%, rgb(38, 1, 15) 100%);
   text-align: center;
   padding: 0.3rem;
   font-weight: 700;
   letter-spacing: 2px;
-  border: 1px solid white;
 }
-.groups .group {
-  background-color: chocolate;
+.main-container .groups .group {
+  border: 1px solid white;
   padding: 0.5rem;
 }
-.groups .group-pos {
+.main-container .groups .group-pos {
   width: 100%;
   background: linear-gradient(90deg, rgb(38, 1, 15) 0%, rgb(146, 14, 53) 51%, rgb(38, 1, 15) 100%);
-  border: 1px solid white;
   margin: auto;
 }
-.groups .group-pos thead > tr {
+.main-container .groups .group-pos thead > tr {
   background-color: #0d0d0d;
 }
-.groups .group-pos thead > tr th {
+.main-container .groups .group-pos thead > tr th {
   text-align: center;
-  border: 1px solid white;
+}
+.main-container .groups .dates {
+  margin-top: 1rem;
+}
+.main-container .groups .dates .date {
+  margin-top: 1rem;
+}
+.main-container .groups .dates .date .date-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+.main-container .groups .dates .date .date-number p {
+  margin: 0;
+}
+.main-container .groups .dates .date .date-match {
+  margin: auto;
+}
+.main-container .groups .dates .date .date-match .team {
+  margin: auto;
+  text-align: center;
+  line-height: 1.5rem;
+  background: linear-gradient(90deg, rgb(38, 1, 15) 0%, rgb(146, 14, 53) 51%, rgb(38, 1, 15) 100%);
+  font-size: 0.8rem;
+}
+.main-container .groups .dates .date .date-match .score {
+  background-color: #f2f2f2;
+  border-right: 1px solid rgb(146, 14, 53);
+  border-left: 1px solid rgb(146, 14, 53);
+}
+.main-container .groups .dates .date .date-match .date-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  margin: 0.2rem auto;
 }/*# sourceMappingURL=style.css.map */
