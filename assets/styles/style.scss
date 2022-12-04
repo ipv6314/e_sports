@@ -97,7 +97,25 @@ body {
       color: #0d0d0d;
     }
   }
-  .groups{
+  .sub-nav{
+    width: 100%;
+    display: flex;
+    padding: .5rem;
+    .boton {
+      width: 15%;
+      margin: auto;
+      margin-top: .5rem;
+      background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
+      border: none;
+      padding: .2rem;
+      text-decoration: none;
+      color: #f2f2f2;
+      text-align: center;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+  }
+  .fixture{
     display: grid;
     gap: 1rem;
     grid-auto-rows: 42rem;
@@ -125,49 +143,73 @@ body {
       text-align: center;
     }
     }
-    .dates {
+  }
+  .fixture-advanced {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .grid-test {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 5rem;
+    grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  }
+  .dates {
+    margin-top: 1rem;
+    .date {
       margin-top: 1rem;
-      .date {
-        margin-top: 1rem;
-        .date-number{
+      .date-number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: .1rem;
+        margin-bottom: .2rem;
+        p {
+          margin: 0;
+        }
+      }
+      .date-match {
+        margin: auto;
+        .team {
+          margin: auto;
+          text-align: center;
+          line-height: 1.5rem;
+          background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
+          font-size: .8rem;
+        }
+        .score{
+          background-color: #f2f2f2;
+          border-right: 1px solid rgba(146,14,53,1);
+          border-left: 1px solid rgba(146,14,53,1);
+        }
+        .date-info {
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 100%;
-          font-weight: 700;
-          letter-spacing: 2px;
-          padding: .1rem;
-          margin-bottom: .2rem;
-          p {
-            margin: 0;
-          }
-        }
-        .date-match {
-          margin: auto;
-          .team {
-            margin: auto;
-            text-align: center;
-            line-height: 1.5rem;
-            background: linear-gradient(90deg, rgba(38,1,15,1) 0%, rgba(146,14,53,1) 51%, rgba(38,1,15,1) 100%);
-            font-size: .8rem;
-          }
-          .score{
-            background-color: #f2f2f2;
-            border-right: 1px solid rgba(146,14,53,1);
-            border-left: 1px solid rgba(146,14,53,1);
-          }
-          .date-info {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-transform: uppercase;
-            padding: .2rem;
-            font-size: .8rem;
-            margin:  .2rem auto;
-          }
+          text-transform: uppercase;
+          padding: .2rem;
+          font-size: .8rem;
+          margin:  .2rem auto;
         }
       }
     }
-}
+    .date-advanced {
+      margin: .5rem 3rem;
+    }
+    .date-match-advanced {
+      margin: .5rem;
+      height: 5rem;
+      padding: .5rem;
+      width: 100%;
+      .team {
+        height: 2rem;
+      }
+    }
+  }
 }
 
