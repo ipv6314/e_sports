@@ -201,4 +201,8 @@ body {
 }
 .main-container .dates .date-match-advanced .team {
   height: 2rem;
+}
+.main-container .dates .finals {
+  width: 100%;
+  margin: auto;
 }/*# sourceMappingURL=style.css.map */
